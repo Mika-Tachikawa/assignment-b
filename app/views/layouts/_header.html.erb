@@ -1,0 +1,11 @@
+	<% if user_signed_in? %>
+	  <%= link_to user_path(current_user),class: 'nav-link text-light' do %> Home <% end %>
+	  <%= link_to users_path,class: 'nav-link text-light' do %> Users <% end %>
+	  <%= link_to books_path ,class: 'nav-link text-light' do %> Books <% end %>
+	  <%= link_to destroy_user_session_path, method: :delete,class: 'nav-link text-light' do %> logout <% end %>
+	<% else %>
+	  <%= link_to root_path,class: 'nav-link text-light' do %> Home <% end %>
+	  <%= link_to home_about_path,class: 'nav-link text-light' do %> About <% end %>
+	  <%= link_to new_user_registration_path,class: 'nav-link text-light' do %> sign up <% end %>
+	  <%= link_to new_user_session_path ,class: 'nav-link text-light' do %> login <% end %>
+	<% end %>
