@@ -1,18 +1,18 @@
-<!-- !DOCTYPE html -->
-<!-- html -->
-  <!-- head -->
-    <!-- <title>AssignmentB</title> -->
-    <!-- <meta name="viewport" content="width=device-width,initial-scale=1"> -->
-    <!-- %= csrf_meta_tags % -->
-    <!-- %= csp_meta_tag % -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AssignmentD</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-    <!-- %= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' % -->
-    <!-- %= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' % -->
-  <!-- /head -->
+    <script src="https://kit.fontawesome.com/087774b1f3.js" crossorigin="anonymous"></script>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
 
 <%= csrf_meta_tags %> <%= csp_meta_tag %> <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %> <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> <%= render 'layouts/header' %>
 <%= notice %>
-<%= render 'layouts/header' %>
 <%= render 'searches/form' %>
 <%= yield %>
 <%= render 'layouts/footer' %>
